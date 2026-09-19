@@ -10,7 +10,7 @@
 <body>
     <div class="wrap">
         <nav class="top">
-            <a href="{{ route('watch-items.index') }}" class="brand">Links</a>
+            <a href="{{ route('watch-items.index') }}" class="brand">Watch Later</a>
             @auth
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
@@ -21,5 +21,8 @@
 
         @yield('content')
     </div>
+        <footer class="footer">
+        <a href="https://github.com/victorelgersma/watchlater" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </footer>
 </body>
 </html>

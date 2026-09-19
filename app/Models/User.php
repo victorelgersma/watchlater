@@ -25,10 +25,6 @@ class User extends Authenticatable
         ];
     }
 
-    public function links(): HasMany
-    {
-        return $this->hasMany(WatchItem::class);
-    }
 
 public function watchItems(): HasMany
 {
